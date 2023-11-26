@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <br>
+  <div class="container w-25">
+    <h1 class="text-center">Electro Tech</h1>
+    <hr >
+  </div>
+    <div class="container productos"> 
+      <br>
+
+        <div class="container w-50">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+            <label for="floatingInput">Nombre</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" checked onchange="verificarRutInput()">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Consumidor final
+            </label>
+          </div>
+          <div class="form-check">
+            <input id="rutRadio" class="form-check-input" type="radio" name="flexRadioDefault" onchange="verificarRutInput()">
+            <label class="form-check-label" for="flexRadioDefault2">
+              RUT
+            </label>
+          </div>
+
+          <br>
+          <div id="num-rut" class="form-floating mb-3 d-none">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Numero de RUT">
+            <label for="floatingInput">Numero de RUT</label>
+          </div>
+
+          <label for="">Productos</label>
+          <select id="select" class="form-select" aria-label="Default select example">
+            <option value="Laptop">Laptop USD500</option>
+            <option value="Pc gamer">Pc gamer USD749</option>
+            <option value="Teclado mecanico">Teclado mecanico USD110</option>
+          </select>
+          <br>
+          <button id="botonAgregar" type="button" class="btn btn-dark">Agregar producto</button>
+
+        </div>
+<br><br>
+    <div class="container">
+      <h1>Carrito de compra</h1>
+      <hr>
+    </div>
+    <div class="container">
+        <table class="tabla table table-bordered text-center">
+            <tr>
+                <th class="titulos" style="background-color:rgb(253, 151, 151);">Producto(s)</th>
+                <th class="titulos" style="background-color:rgb(253, 151, 151);">SubTotal</th>
+            </tr>
+        </table>
+        <br>
+    <div class="w-25">
+      <table class="table table-bordered text-center">
+          <tr>
+              <th style="background-color:rgb(253, 151, 151);">Precio Final</th>
+              <th class="precio-final">0</th>
+          </tr>
+      </table>
+    </div>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
